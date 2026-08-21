@@ -64,23 +64,30 @@ do
 }while(i>0);
 
 
-function mul(x,y)
+function add( x, y)
 {
+    console.log("Addition of two numbers : ")
     return x*y
 }
 
-console.log("Multipliactrion",mul(3,4))
+console.log(add(2,8))
 
-
- let g=function (x,y)
+const a =function(x,y) 
 {
-    return x*y
+    console.log("Addition of two numbers : ")
+    return x+y
+
 }
 
-console.log("Anoynomous func:",g(1,4))
+console.log(a(2,5))
 
- let c= (x,y) => { return x*y }
+let b= (x,y) =>  x+y
 
- console.log(c(2,9))
+console.log(" Arrow function : ",b(45,67));
 
- ((x,y) =>  x*y ) (3,76)
+(() => {
+    console.log("hello");
+})();
+
+
+
